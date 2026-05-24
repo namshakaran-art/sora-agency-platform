@@ -12,7 +12,6 @@ import Contacts from "./Pages/Contacts/Contacts";
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop />
       <Navbar /> {/* Navbar ko yahan rakho, taaki ye hamesha rahe */}
       <Routes>
         <Route path="/" element={<Home />} />
