@@ -21,7 +21,7 @@ body {
   height: 92px;
   color: white;
   position: fixed;
-  top: 20px; /* Thoda top se space diya */
+  /* top: 20px; Thoda top se space diya */
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
@@ -51,18 +51,18 @@ body {
   cursor: pointer;
 }
 
+/* Purana wala purple hover hata kar ye simple effect rakho */
 .lefttext h1:hover {
   transform: translateY(-2px);
-  background: linear-gradient(90deg, #7c3aed, #06b6d4, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff; /* Purple ke bajaye sirf white hi rahega */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Halki si white glow */
 }
-
 /* NAV LINKS */
 .righttext {
   display: flex;
   gap: 30px; /* Gap thoda kam kiya for stability */
   align-items: center;
+   font-family: "Clash Display", sans-serif;
 }
 
 .nav-link {
