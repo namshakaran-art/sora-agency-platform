@@ -11,9 +11,12 @@ const Navbar = () => {
 
       {/* LOGO */}
       <div className="lefttext">
-        <Link to="/" className="nav-link1">
-          <h1>SORA</h1>
-        </Link>
+       // src/Components/Navbar/Navbar.jsx
+<Link to="/" className="nav-link1">
+  <h1 style={{ textDecoration: "none", backgroundImage: "none", color: "white" }}>
+    SORA
+  </h1>
+</Link>
       </div>
 
       {/* RIGHT NAV */}
