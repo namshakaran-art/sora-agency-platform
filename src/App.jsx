@@ -2,14 +2,15 @@ import React, { useEffect, useRef } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 
+// SAHI KARO - Check karo folder small 'p' se shuru ho raha hai ya capital 'P' se
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home";
-import Services from "./Pages/Services/Services";
-import Process from "./Pages/Process/Process";
-import Pricing from "./Pages/Pricing/Pricing";
-import FAQ from "./Pages/FAQ/FAQ";
-import Contacts from "./Pages/Contacts/Contacts";
+import Home from "./pages/Home"; // Agar folder 'pages' hai to small 'p' likho
+import Services from "./pages/Services/Services"; 
+import Process from "./pages/Process/Process";
+import Pricing from "./pages/Pricing/Pricing";
+import FAQ from "./pages/FAQ/FAQ";
+import Contacts from "./pages/Contacts/Contacts";
 
 const ScrollManager = () => {
   const location = useLocation();
