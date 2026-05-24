@@ -1,26 +1,22 @@
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html,
-body{
+body {
   width: 100%;
-  overflow: hidden; /* IMPORTANT */
+  /* overflow: hidden;  <-- ISE HATA DO YA COMMENT KAR DO */
+  overflow-x: hidden; /* Sirf horizontal scroll band rakho */
   background: #050505;
-
-  scroll-behavior: auto;
-
-  overscroll-behavior: none;
-
+  scroll-behavior: smooth; /* Smooth scroll ke liye */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-[data-scroll-container]{
+[data-scroll-container] {
   min-height: 100vh;
-  will-change: transform;
+  width: 100%;
+  /* will-change: transform; */
 }
