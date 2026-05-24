@@ -110,10 +110,3 @@ html, body {
 }
 
 
-/* Force override */
-.lefttext h1, .lefttext h1:hover {
-  text-decoration: none !important;
-  background: none !important;
-  -webkit-text-fill-color: white !important;
-  text-shadow: none !important;
-}
