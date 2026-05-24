@@ -1,0 +1,315 @@
+.contact {
+  /* width: 100%; */
+  min-height: 100vh;
+  background-color: #050505;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* perfect center */
+  color: #fff;
+  padding: 0 20px;
+ animation: anim1 1.1s ease-in forwards;
+}
+
+/* LOADING ANIMATION */
+
+@keyframes anim1{
+   from{
+    opacity: 0;
+    /* transform: translate(40px); */
+   }
+   to{
+    opacity: 1;
+    transform: translate(0,0);
+   }
+}
+
+.smallheading h4 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #7c3aed, #06b6d4, #ffffff);
+  -webkit-background-clip: text; /*all these helps to add backgroud only in text */
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.smallheading h4:hover {
+  text-shadow:
+    0 0 10px rgba(124, 58, 237, 0.4),
+    0 0 20px rgba(6, 182, 212, 0.3);
+  transform: translateY(
+    -4px
+  ); /* HOVER JAB BHI HOGA THODA UPAR KI SIDE SHIGT HO JAYEGA */
+}
+
+.smallheading h1 {
+  font-size: 90px;
+  background: linear-gradient(90deg, #ffffff, #7c3aed, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.smallheading p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* CONTACT FORM */
+form {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.contactform {
+  display: flex;
+  gap: 15px;
+}
+
+
+.contactform input,
+form > input,
+textarea {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* FOCUS EFFECT */
+.contactform input:focus,
+form > input:focus,
+textarea:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  transform: translateY(-2px);
+}
+
+/* TEXTAREA */
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* BUTTON */
+form button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+
+  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+/* LAPTOP */
+@media (max-width: 1200px) {
+
+  .smallheading h1 {
+    font-size: 75px;
+  }
+
+  .smallheading p {
+    font-size: 17px;
+  }
+
+  form {
+    max-width: 650px;
+  }
+}
+
+
+/* TABLET */
+@media (max-width: 992px) {
+
+  .contact {
+    padding: 80px 30px;
+  }
+
+  .smallheading h1 {
+    font-size: 62px;
+  }
+
+  .smallheading p {
+    font-size: 16px;
+    max-width: 600px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+
+/* MOBILE LARGE */
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 70px 22px;
+  }
+
+  .smallheading h4 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .smallheading h1 {
+    font-size: 50px;
+    line-height: 1.1;
+  }
+
+  .smallheading p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .contactform {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  form {
+    gap: 18px;
+    margin-top: 40px;
+  }
+
+  .contactform input,
+  form > input,
+  textarea {
+    padding: 14px 15px;
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 130px;
+  }
+
+  form button {
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+  .contact {
+    padding: 60px 18px;
+  }
+
+  .smallheading h1 {
+    font-size: 40px;
+  }
+
+  .smallheading p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  form {
+    margin-top: 35px;
+  }
+
+  .contactform input,
+  form > input,
+  textarea {
+    border-radius: 10px;
+  }
+
+  form button {
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 380px) {
+
+  .smallheading h4 {
+    font-size: 12px;
+  }
+
+  .smallheading h1 {
+    font-size: 32px;
+  }
+
+  .smallheading p {
+    font-size: 13px;
+  }
+
+  .contactform input,
+  form > input,
+  textarea {
+    padding: 12px 13px;
+    font-size: 13px;
+  }
+
+  textarea {
+    height: 110px;
+  }
+
+  form button {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+
+/* EXTRA SMALL */
+@media (max-width: 280px) {
+
+  .contact {
+    padding: 50px 12px;
+  }
+
+  .smallheading h1 {
+    font-size: 24px;
+  }
+
+  .smallheading p {
+    font-size: 11px;
+  }
+
+  .contactform input,
+  form > input,
+  textarea {
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  form button {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
