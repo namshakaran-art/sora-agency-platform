@@ -1,16 +1,72 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SORA - B2B Agency Platform
+A modern dark-mode B2B agency website built using React.js and native CSS3. This project was created to practice advanced frontend development, responsive layouts, smooth animations, and performance optimization without using heavy UI libraries or frameworks.
 
-Currently, two official plugins are available:
+SORA focuses on creating a premium user experience with clean design, smooth scrolling, and modern interaction effects while keeping the codebase simple and scalable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project Overview
+This platform is designed for startups, founders, and businesses looking for presentation design services and a modern digital presence.
 
-## React Compiler
+Main focus areas of the project:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Responsive frontend development
+Clean UI design
+Smooth page transitions
+Performance optimization
+Reusable component structure
+Accessibility-friendly layouts
+Features
+Responsive Bento Grid Layout
+Built custom Bento-style layouts using pure CSS Grid to create flexible and modern content sections across all screen sizes.
 
-## Expanding the ESLint configuration
+Smooth Scrolling
+Integrated Locomotive Scroll / Lenis for smooth inertial scrolling and better interaction experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Smooth page movement
+Better scrolling feel
+Premium interaction experience
+Optimized Animations
+Used hardware-accelerated CSS properties for smoother animations and better rendering performance.
+
+transform: translate3d();
+will-change: transform;
+backface-visibility: hidden;
+These optimizations help reduce lag and improve animation smoothness.
+
+Custom Route Scroll Handling
+Implemented custom scroll management during route changes to maintain smooth navigation and stable page transitions.
+
+Modern Dark UI
+Created a clean dark-mode interface with:
+
+Minimal design
+Responsive layouts
+Smooth hover effects
+Modern typography
+Structured spacing system
+Tech Stack
+Technology	Purpose
+React.js	Frontend framework
+React Router v6	Routing
+Vite	Build tool
+Native CSS3	Styling
+CSS Grid & Flexbox	Responsive layouts
+Semantic HTML5	Accessibility
+What I Learned
+This project helped me improve my skills in:
+
+Advanced CSS layouts
+Responsive design
+React component structure
+Smooth scrolling integration
+Animation optimization
+UI/UX design principles
+SPA route management
+Responsive Design
+The website is fully responsive and optimized for:
+
+Desktop
+Laptop
+Tablet
+Mobile devices
+Layouts and spacing automatically adjust based on screen size to maintain consistency across devices.
