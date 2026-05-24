@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
+    // Ye line build ko crash hone se bachati hai
     rollupOptions: {
       output: {
         manualChunks(id) {

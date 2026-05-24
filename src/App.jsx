@@ -1,8 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import LocomotiveScroll from "locomotive-scroll";
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// SAHI KARO - Check karo folder small 'p' se shuru ho raha hai ya capital 'P' se
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home";
@@ -12,49 +10,9 @@ import Pricing from "./Pages/Pricing/Pricing";
 import FAQ from "./Pages/FAQ/FAQ";
 import Contacts from "./Pages/Contacts/Contacts";
 
-const ScrollManager = () => {
-  const location = useLocation();
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    // Force the browser layout to drop standard jump mechanics
-    document.documentElement.style.scrollBehavior = "auto";
-    window.scrollTo(0, 0);
-
-    // Initialize Scroll System
-    scrollRef.current = new LocomotiveScroll({
-      lenisOptions: {
-        wrapper: window,
-        content: document.documentElement,
-        duration: 1.2,
-        lerp: 0.08, // Gives that distinctive buttery glide
-        smoothWheel: true,
-      },
-    });
-
-    // CRITICAL BUGFIX: Forces the wrapper engine to recalculate layout height 
-    // after the DOM has fully rendered the new page route layout.
-    const timer = setTimeout(() => {
-      if (scrollRef.current) {
-        scrollRef.current.resize();
-      }
-    }, 100);
-
-    return () => {
-      clearTimeout(timer);
-      if (scrollRef.current) {
-        scrollRef.current.destroy();
-      }
-    };
-  }, [location.pathname]); // Re-runs on every distinct pathname update hook
-
-  return null;
-};
-
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollManager />
       <main style={{ width: "100%", overflowX: "hidden" }}>
         <Navbar />
         <Routes>
