@@ -1,6 +1,8 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
+import Navbar from "./Components/Navbar/Navbar"; // Navbar yahan import karo
 import Home from "./Pages/Home";
 import Services from "./Pages/Services/Services";
 import Process from "./Pages/Process/Process";
@@ -11,7 +13,8 @@ import Contacts from "./Pages/Contacts/Contacts";
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollToTop /> {/* Yahan add kiya */}
+      <ScrollToTop />
+      <Navbar /> {/* Navbar ko yahan rakho, taaki ye hamesha rahe */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

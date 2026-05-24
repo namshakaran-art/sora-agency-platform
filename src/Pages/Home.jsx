@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Navbar/Navbar";
+// import Navbar from "../Components/Navbar/Navbar";
 import HeroSection from "../Components/HeroSection/HeroSection";
 import Green from "../Components/Greenpart/Green";
 import CardSwap, { Card } from "../Components/card/cardswap";
@@ -10,7 +10,7 @@ import Footer from "../Components/Footer/Footer";
 const Home = () => {
   return (
     <div>
-      <Navbar />
+     
       <HeroSection />
       <Green />
 
