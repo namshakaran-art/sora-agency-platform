@@ -34,7 +34,7 @@
 
   width: max-content;
 
-  animation: marquee 2.5s linear infinite;
+  animation: marquee 10s linear infinite;
 
   will-change: transform;
 }
@@ -42,17 +42,11 @@
 .marquee-content h1 {
   font-size: 120px;
   font-weight: 800;
-
   margin: 0;
-
   letter-spacing: 3px;
-
   text-transform: uppercase;
-
   color: #5f5f5f;
-
   cursor: pointer;
-
   transition: 0.15s ease;
 }
 
@@ -68,11 +62,8 @@
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   background-clip: text;
-
   color: transparent;
-
   transform: scale(1.05);
 }
 
@@ -100,7 +91,7 @@
 
   .marquee-content {
     gap: 60px;
-    animation: marquee 2.5s linear infinite;
+    animation: marquee 8.5s linear infinite;
   }
 
   .marquee-content h1 {
@@ -118,7 +109,7 @@
 
   .marquee-content {
     gap: 50px;
-    animation: marquee 2.5s linear infinite;
+    animation: marquee 8.5s linear infinite;
   }
 
   .marquee-content h1 {
@@ -137,7 +128,7 @@
 
   .marquee-content {
     gap: 40px;
-    animation: marquee 2.5s linear infinite;
+    animation: marquee 8.5s linear infinite;
   }
 
   .marquee-content h1 {
@@ -156,7 +147,7 @@
 
   .marquee-content {
     gap: 30px;
-    animation: marquee 2.5s linear infinite;
+    animation: marquee 8.5s linear infinite;
   }
 
   .marquee-content h1 {
@@ -175,7 +166,7 @@
 
   .marquee-content {
     gap: 22px;
-    animation: marquee 2.5s linear infinite;
+    animation: marquee 8.5s linear infinite;
   }
 
   .marquee-content h1 {
@@ -189,7 +180,7 @@
 
   .marquee-content {
     gap: 18px;
-    animation: marquee 2.5s linear infinite;
+    animation: marquee 8.5s linear infinite;
   }
 
   .marquee-content h1 {
