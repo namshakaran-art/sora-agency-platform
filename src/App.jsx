@@ -1,7 +1,6 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollToTop from "./ScrollToTop";
 import Navbar from "./Components/Navbar/Navbar"; // Navbar yahan import karo
 import Home from "./Pages/Home";
 import Services from "./Pages/Services/Services";
