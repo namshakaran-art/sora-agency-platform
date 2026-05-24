@@ -4,6 +4,14 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    chunkSizeWarningLimit: 1000, // Large files ko handle karne ke liye
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
+        }
+      }
+    }
   }
 })
