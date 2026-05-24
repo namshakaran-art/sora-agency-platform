@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// Folder names match hone chahiye (Capital C aur P)
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home";
-import Services from "./Pages/Services/Services"; 
+import Services from "./Pages/Services/Services";
 import Process from "./Pages/Process/Process";
 import Pricing from "./Pages/Pricing/Pricing";
 import FAQ from "./Pages/FAQ/FAQ";
