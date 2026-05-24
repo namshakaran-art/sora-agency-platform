@@ -1,16 +1,4 @@
-/* GLOBAL CLEANUP */
-html, body {
-  overflow-x: hidden !important;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* NAVBAR BASE */
+/* NAVBAR CONTAINER */
 .navbar {
   width: 90%;
   height: 80px;
@@ -19,58 +7,61 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  padding: 0 30px;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 99px;
-  background: rgba(10, 10, 10, 0.7);
+  background: rgba(10, 10, 10, 0.6);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* LOGO SORA (No underline) */
+/* LEFT SIDE - SORA LOGO */
 .lefttext h1 {
   font-family: "Clash Display", sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none !important; /* Underline khatam */
 }
 
-/* NAV LINKS */
+/* RIGHT SIDE - NAV LINKS */
 .righttext {
   display: flex;
-  gap: 30px;
   align-items: center;
+  gap: 30px; /* Links ke beech perfect space */
 }
 
 .nav-link {
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
   cursor: pointer;
+  white-space: nowrap; /* Taki text break na ho */
 }
 
-/* LET'S TALK BUTTON (Clean, No Purple) */
+/* LET'S TALK BUTTON */
 .contact-btn {
   cursor: pointer;
   border: none;
   background: transparent;
+  margin-left: 20px;
 }
 
 .contact-btn span {
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 99px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: #ffffff;
   font-size: 13px;
   font-weight: 600;
+  text-transform: uppercase;
   transition: 0.3s;
 }
 
@@ -78,35 +69,14 @@ html, body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE FOR TABLET/MOBILE */
 @media (max-width: 900px) {
+  .navbar { padding: 0 20px; }
   .righttext { gap: 15px; }
-  .nav-link { font-size: 14px; }
 }
 
 @media (max-width: 768px) {
-  .navbar { width: 95%; padding: 0 20px; }
-  
   .righttext {
-    position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    background: rgba(10, 10, 10, 0.95);
-    flex-direction: column;
-    padding: 20px 0;
-    border-radius: 20px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
+    display: none; /* Mobile pe hum isse toggle karenge */
   }
-
-  .righttext.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .menu-icon { display: flex !important; color: white; }
 }
-
-
