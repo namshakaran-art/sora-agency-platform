@@ -5,7 +5,7 @@ import Green from "../Components/Greenpart/Green";
 import CardSwap, { Card } from "../Components/card/cardswap";
 import Company from "../Components/Company/Company";
 import Contact from "../Components/Contact/Contact";
-import Footer from "../Components/Footer/Footer"; // Footer wapas add kar diya
+import Footer from "../Components/Footer/Footer"; 
 import Services from "../Pages/Services/Services";
 import Process from "../Pages/Process/Process";
 import Pricing from "../Pages/Pricing/Pricing";
@@ -15,9 +15,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-
       <HeroSection />
-
       <Green />
 
       {/* CARD SWAP SECTION */}
