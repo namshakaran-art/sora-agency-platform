@@ -6,10 +6,6 @@ import CardSwap, { Card } from "../Components/card/cardswap";
 import Company from "../Components/Company/Company";
 import Contact from "../Components/Contact/Contact";
 import Footer from "../Components/Footer/Footer"; 
-import Services from "../Pages/Services/Services";
-import Process from "../Pages/Process/Process";
-import Pricing from "../Pages/Pricing/Pricing";
-import FAQ from "../Pages/FAQ/FAQ";
 
 const Home = () => {
   return (
@@ -45,11 +41,7 @@ const Home = () => {
         </CardSwap>
       </div>
 
-      {/* ADDITIONAL SECTIONS */}
-      <Services />
-      <Process />
-      <Pricing />
-      <FAQ />
+
 
       {/* COMPANY & CONTACT */}
       <Company />
