@@ -12,28 +12,28 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 99px;
-  background: rgba(10, 10, 10, 0.6);
+  background: rgba(10, 10, 10, 0.9); /* Sahi dark look */
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* LEFT SIDE - SORA LOGO */
+/* SORA LOGO - NO UNDERLINE */
 .lefttext h1 {
   font-family: "Clash Display", sans-serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
   cursor: pointer;
-  text-decoration: none !important; /* Underline khatam */
+  text-decoration: none !important;
 }
 
-/* RIGHT SIDE - NAV LINKS */
+/* NAV LINKS */
 .righttext {
   display: flex;
   align-items: center;
-  gap: 30px; /* Links ke beech perfect space */
+  gap: 30px;
 }
 
 .nav-link {
@@ -42,41 +42,38 @@
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
-  white-space: nowrap; /* Taki text break na ho */
 }
 
-/* LET'S TALK BUTTON */
+/* LET'S TALK BUTTON - EXACT STYLE */
 .contact-btn {
   cursor: pointer;
   border: none;
   background: transparent;
-  margin-left: 20px;
 }
 
 .contact-btn span {
-  padding: 10px 22px;
+  padding: 10px 20px;
   border-radius: 99px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* Button ka dark purple/gradient look */
+  background: linear-gradient(135deg, #4338ca, #312e81);
   color: #ffffff;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   transition: 0.3s;
 }
 
+/* DOT INSIDE BUTTON */
+.contact-btn span::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
 .contact-btn:hover span {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* RESPONSIVE FOR TABLET/MOBILE */
-@media (max-width: 900px) {
-  .navbar { padding: 0 20px; }
-  .righttext { gap: 15px; }
-}
-
-@media (max-width: 768px) {
-  .righttext {
-    display: none; /* Mobile pe hum isse toggle karenge */
-  }
+  filter: brightness(1.2);
 }
