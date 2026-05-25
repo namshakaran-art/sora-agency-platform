@@ -5,7 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  
+  font-family: "Clash Display", sans-serif;
   /* Blur ko force karne ka secret */
   background: rgba(10, 10, 10, 0.5) !important;
   backdrop-filter: blur(20px) !important;
