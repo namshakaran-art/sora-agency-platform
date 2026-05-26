@@ -2,6 +2,7 @@
 .navbar {
   /* Positioning */
   position: fixed;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
@@ -43,7 +44,7 @@
 }
 .nav-link {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 9px;
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
